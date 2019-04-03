@@ -36,6 +36,7 @@ function GetModel(pid, callback) {
                                 <li><a href="/RotationChartSetting/Index" >轮播图设置</a></li>
                                 <li><a href="/ModelManager/Index" >模块管理</a></li>
                                 <li><a href="/WebStationSetting/Index" >网站设置</a></li>
+                                <li><a href="/UserManager/Index" >用户管理</a></li>
                             </ul>
                         </div>
                     </a>
@@ -60,6 +61,20 @@ function GetModel(pid, callback) {
         });
     }
 }
+
+$(document).on("click", ".menupoint", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("target");
+    if (target === "show") {
+        $(this).attr("target", "hidden");
+        $("#sidebar-nav").addClass("hiddenleftbar").removeClass("showleftbar");
+    }
+    if (target === "hidden") {
+        $(this).attr("target", "show");
+        $("#sidebar-nav").addClass("showleftbar").removeClass("hiddenleftbar");
+    }
+
+})
 
 
 $(function () {

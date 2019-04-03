@@ -1755,4 +1755,36 @@ ul.activity-timeline > li {
     width: 22px;
     border: 1px solid #CCC; }
 
-/*# sourceMappingURL=main.css.map */
+.menupoint{
+    display:none;
+    width:5rem;
+    height:5rem;
+    background:#0057a1;
+    color:white;
+    text-align:center;
+    line-height:5rem;
+}
+.showleftbar {
+    left: 0 !important;
+}
+
+.hiddenleftbar {
+   left: -260px !important;
+}
+    /*# sourceMappingURL=main.css.map */
+    @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+        .menupoint {
+        display: block;
+        position:fixed;
+        z-index: 99;
+        top:10%;
+        right:3%;
+    }
+    .sidebar{
+        padding:0 !important;
+    }
+    .main {
+        padding: 10% 0 0 0 !important;
+    }
+
+}
