@@ -2607,3 +2607,11 @@ ul.activity-timeline > li {
         padding-bottom: 4% !important;
     }
 }
+
+.sidebar-scroll {
+    overflow-y: auto !important;
+    scrollbar-width: none;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    display:none;
+}
